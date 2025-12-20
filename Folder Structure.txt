@@ -1,0 +1,68 @@
+/public-speaker-website
+│
+├── index.html                  # Home page
+│
+├── /about
+│   └── index.html              # About / Bio page
+│
+├── /speaking
+│   ├── index.html              # Speaking Topics / Services
+│   └── topics.html             # Optional detailed topics page
+│
+├── /events
+│   └── index.html              # Upcoming & past events
+│
+├── /media
+│   └── index.html              # Gallery, videos, press
+│
+├── /testimonials
+│   └── index.html              # Testimonials & reviews
+│
+├── /blog
+│   ├── index.html              # Blog listing page
+│   └── posts
+│       ├── post-1.html
+│       ├── post-2.html
+│       └── post-3.html
+│
+├── /books
+│   └── index.html              # Books & publications
+│
+├── /newsletter
+│   └── index.html              # Email signup page
+│
+├── /contact
+│   └── index.html              # Contact & booking page
+│
+├── /assets
+│   ├── /css
+│   │   ├── main.css
+│   │   └── responsive.css
+│   │
+│   ├── /js
+│   │   ├── main.js
+│   │   └── form-handler.js
+│   │
+│   ├── /images
+│   │   ├── profile.jpg
+│   │   ├── speaking/
+│   │   ├── books/
+│   │   └── events/
+│   │
+│   ├── /fonts
+│   └── /icons
+│
+├── /downloads
+│   ├── speaker-one-sheet.pdf
+│   └── media-kit.pdf
+│
+├── /includes
+│   ├── header.html
+│   ├── footer.html
+│   └── navigation.html
+│
+├── /seo
+│   ├── sitemap.xml
+│   └── robots.txt
+│
+└── README.md                   # Project notes
