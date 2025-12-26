@@ -17,53 +17,81 @@
 }
 
 @media (max-width: 768px) {
-
-/* Organize the header layout */
+  
+  /* --- 1. The Layout --- */
   .topbar-inner {
     display: flex;
-    flex-wrap: wrap; /* Allows the menu to drop down */
     justify-content: space-between;
     align-items: center;
   }
 
-  /* Show menu when active */
-  .top-nav.active {
-    display: flex;
-  }
-
-  /* Show hamburger */
+  /* --- 2. The Hamburger Button --- */
   .hamburger {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px; /* Spacing between lines */
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 1000; /* IMPT: Must be higher than the menu overlay */
+    padding: 10px; /* Bigger touch target */
   }
 
   .hamburger span {
-    width: 22px;
-    height: 2px;
+    width: 30px;
+    height: 3px;
     background: #000;
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+    transform-origin: 3px 1px; /* Pivot point for rotation */
   }
 
-  /* Hide the Nav Links by default */
+  /* --- 3. Hamburger "X" Animation --- */
+  /* Top line rotates down */
+  .hamburger.is-active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  
+  /* Middle line fades away */
+  .hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  /* Bottom line rotates up */
+  .hamburger.is-active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  /* --- 4. The Full-Screen Overlay Menu --- */
   .top-nav {
-    display: none; /* Hidden until clicked */
-    width: 100%; /* Take full width when open */
+    position: fixed; /* Stick to screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full height */
+    background-color: #ffffff; /* White background */
+    
+    /* Layout the links */
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-top: 20px;
+    justify-content: center; /* Center Vertically */
+    align-items: center;     /* Center Horizontally */
+    gap: 30px;               /* Space between links */
+    
+    /* Transition Effects */
+    transform: translateX(100%); /* Start hidden to the right */
+    transition: transform 0.4s ease-in-out;
+    z-index: 999; /* Below the hamburger, above the website */
   }
 
-  /* Style for individual links (Optional for spacing) */
-  .top-nav a {
-    display: block;
-    padding: 10px 0;
-  }
-
-  /* The Active State */
+  /* Slide in when active */
   .top-nav.active {
-    display: flex; /* Shows the menu when JS adds this class */
+    transform: translateX(0);
+  }
+
+  /* Make links big and bold for mobile */
+  .top-nav a {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
   }
 }
