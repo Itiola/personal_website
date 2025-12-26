@@ -30,13 +30,13 @@ body {
 
 /* Top Bar */
 .site-topbar {
-  padding: 1.8rem 0;
+  padding: 0rem 0;
 }
 
 .topbar-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  width: 96.5%;
+  margin: 5;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,18 +44,21 @@ body {
 
 /* Logo */
 .logo a {
-  text-decoration: none;
-  color: var(--color-dark);
-  font-weight: 600;
-  font-size: 1rem;
+  display: block;
 }
 
 /* Top Navigation */
+
+.top-nav {
+ display: flex;
+ gap: 1.6rem
+}
+
 .top-nav a {
-  margin-left: 1.4rem;
   text-decoration: none;
   color: var(--color-grey);
   font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 .top-nav a:hover {
@@ -105,7 +108,9 @@ body {
 
 /* Logo Image */
 .logo img {
-  max-height: 40px;       /* adjust as needed */
-  width: auto;            /* keep aspect ratio */
+  height: 120px;       /* adjust as needed */
+  width: auto; 
+  margin: 0;
+  padding: 0;
   display: block;
 }
