@@ -1,0 +1,26 @@
+/* Top Bar */
+.site-topbar {
+  padding: 0rem 0;
+}
+
+.topbar-inner {
+  width: 96.5%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header Text (if used elsewhere) */
+.site-header h1 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 0.4rem;
+}
+
+.descriptor {
+  color: var(--color-grey);
+  margin-bottom: 2.5rem;
+}

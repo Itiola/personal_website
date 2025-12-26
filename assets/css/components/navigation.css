@@ -1,0 +1,32 @@
+/* Top Navigation */
+
+.top-nav {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: var(--color-grey);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+  color: var(--color-dark);
+}
+
+/* Primary Navigation (used in content) */
+.primary-nav a {
+  display: inline-block;
+  margin-right: 1.4rem;
+  margin-bottom: 0.6rem;
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+.primary-nav a:hover {
+  text-decoration: underline;
+}

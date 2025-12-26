@@ -17,6 +17,12 @@
           <img src="assets/images/logo.png" alt="Personal Logo">
         </a>
       </div>
+    
+    <button class="hamburger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+      </button>
 
       <nav class="top-nav">
         <a href="/about.html">About</a>
@@ -24,7 +30,8 @@
         <a href="/books.html">Books</a>
         <a href="/writing.html">Writing</a>
         <a href="/newsletter.html">Newsletter</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/contact.html">Contact</a>  
+      
       </nav>
     </div>
   </header>
@@ -47,5 +54,14 @@
 
   </main>
 
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.top-nav');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+  
 </body>
 </html>
