@@ -1,5 +1,11 @@
 .logo a {
-  display: block;
+  display: inline-block; /* Ensures the link wraps tightly around the image */
+  transition: opacity 0.3s ease;
+}
+
+.logo a:hover {
+  opacity: 0.8; /* Subtle "fade" effect when hovered */
+  cursor: pointer;
 }
 
 .logo img {
