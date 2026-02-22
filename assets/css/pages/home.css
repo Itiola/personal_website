@@ -2,3 +2,13 @@
   font-size: 1.05rem;
   margin-bottom: 3rem;
 }
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}

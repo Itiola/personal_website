@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortune Itiola | Public Speaker · Thought Leader · Consultant</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Smooth scrolling makes the transition feel premium */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Adding some padding so headers don't get hidden under a fixed topbar */
+    section {
+      padding: 60px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-topbar">
+    <div class="topbar-inner">
+      <div class="logo">
+        <a href="#home">
+          <img src="assets/images/logo.png" alt="Personal Logo">
+        </a>
+      </div>
+    
+      <button class="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="top-nav">
+        <a href="#about">About</a>
+        <a href="#speaking">Speaking</a>
+        <a href="#consultation">Consultation</a>
+        <a href="#thought-leadership">Thought Leadership</a>
+        <a href="#contact">Contact</a>  
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="home" class="intro">
+      <h1>Public Speaker · Thought Leader · Consultant</h1>
+      <p>I am Babatunde Fortune Itiola, fondly called BFI...</p>
+      </section>
+
+    <hr>
+
+    <section id="about">
+      <h2>About BFI</h2>
+      <p>As a consultant and emerging thought leader, I engage audiences around the practical application of data-driven insights...</p>
+    </section>
+
+    <section id="speaking">
+      <h2>Speaking</h2>
+      <p>I aim to inspire others to think critically and embrace innovation through high-impact public speaking.</p>
+    </section>
+
+    <section id="consultation">
+      <h2>Consultation</h2>
+      <p>I am currently building a consulting company dedicated to helping organizations harness the power of data.</p>
+    </section>
+
+    <section id="thought-leadership">
+      <h2>Thought Leadership</h2>
+      <article class="article-preview">
+        <h3>The Future of Data-Driven Economics</h3>
+        <p>A brief summary of your latest insight or article goes here to entice the reader...</p>
+        <a href="article-data-economics.html" class="read-more">Read Full Article →</a>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Ready to transform your systems? Let's connect.</p>
+      </section>
+
+  </main>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.top-nav');
+    const links = document.querySelectorAll('.top-nav a');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('is-active');
+    });
+
+    // Close mobile menu when a link is clicked
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('is-active');
+      });
+    });
+  </script>
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Fortune Itiola</h3>
+        <p>Helping individuals, organizations and nations think clearly and act intentionally.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#speaking">Speaking</a></li>
+          <li><a href="#consultation">Consultation</a></li>
+          <li><a href="#thought-leadership">Thought Leadership</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+          <a href="#">Newsletter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Fortune Itiola. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

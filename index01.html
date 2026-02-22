@@ -4,21 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fortune Itiola</title>
+
   <link rel="stylesheet" href="assets/css/main.css">
-  <style>
-    /* Added to ensure the single-page scroll is smooth */
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
 </head>
 <body>
 
+  <!-- ================= HEADER ================= -->
   <header class="site-topbar">
     <div class="topbar-inner">
 
       <div class="logo">
-        <a href="#about"> <img src="assets/images/logo.png" alt="Fortune Itiola Logo">
+        <a href="#home">
+          <img src="assets/images/logo.png" alt="Fortune Itiola Logo">
         </a>
       </div>
 
@@ -29,75 +26,73 @@
       </button>
 
       <nav class="top-nav">
+        <ul class="nav-links">
           <a href="#about">About</a>
           <a href="#speaking">Speaking</a>
           <a href="#consultation">Consultation</a>
           <a href="#thought-leadership">Thought Leadership</a>
           <a href="#contact">Contact</a>
-          </nav>
+        </ul>
+      </nav>
 
     </div>
   </header>
 
 
+  <!-- ================= MAIN ================= -->
   <main>
 
-    <section id="about" class="section-light">
-  <div class="container">
-<div class="container"> <h2 class="section-title" style="margin-bottom: 30px;">Public Speaker · Thought Leader · Consultant</h2>
-    
-    <div class="section-text">
-      <p>
-        I am Babatunde Fortune Itiola, fondly called BFI, a passionate thinker and speaker at the intersection of technology, economics, and data. A technology enabled and data driven thought leader who helps individuals, families, businesses, organizations, economies and nations understand, improve and transform their systems.
-      </p> 
+    <!-- HOME / INTRO -->
+    <section id="about" class="section">
+      <div class="container">
+        <h1>Public Speaker · Thought Leader · Consultant</h1>
 
-      <p>
-        As a consultant and emerging thought leader, I engage audiences around the practical application of data-driven insights, the transformative power of technology, and the economic principles that shape our world. I strive to make complex ideas accessible and actionable, bridging the gap between theory and practice.
-      </p>
+        <p>
+          I am Babatunde Fortune Itiola (BFI), a thinker and speaker at the
+          intersection of technology, economics, and data.
+        </p>
 
-      <p>
-        I am currently building a consulting company dedicated to helping organizations harness the power of data, innovate strategically, and unlock new economic opportunities. My approach blends rigorous analysis with strategic thinking, enabling leaders to navigate uncertainty, anticipate trends, and make decisions that drive measurable impact.
-      </p>
+        <p>
+          I help individuals, organizations, and nations understand,
+          improve, and transform their systems through data-driven insight
+          and strategic clarity.
+        </p>
+      </div>
+    </section>
 
-      <p>
-        Through public speaking, writing, and advisory work, I aim to inspire others to think critically, embrace innovation, and understand the broader forces shaping business and society. I believe that knowledge is most valuable when shared, and that insights are only as powerful as the action they inspire.
-      </p>
-      
-      <p>
-        When I’m not speaking or advising, I’m exploring emerging trends in technology and economics, seeking new ways to create meaningful impact, and engaging with communities that are shaping the future of business and innovation.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-    <section id="speaking" class="section-grey">
+    <!-- SPEAKING -->
+    <section id="speaking" class="section">
       <div class="container">
         <h2>Speaking</h2>
 
         <p>
-          I speak on technology, data strategy, and economic transformation.
+          I speak on the transformative power of technology, the practical
+          use of data, and the economic systems shaping our future.
         </p>
 
         <p>
-          Formats include keynote addresses, executive briefings, and institutional forums.
+          Engagement formats include keynote presentations, executive
+          briefings, and institutional forums.
         </p>
       </div>
     </section>
 
 
-    <section id="consultation" class="section-light">
+    <!-- CONSULTATION -->
+    <section id="consultation" class="section">
       <div class="container">
         <h2>Consultation</h2>
 
         <p>
-          I am building a consulting practice helping organizations harness data,
-          innovate strategically, and navigate uncertainty.
+          I am building a consulting practice focused on helping
+          organizations harness data, innovate strategically, and navigate
+          uncertainty with confidence.
         </p>
       </div>
     </section>
 
 
+    <!-- THOUGHT LEADERSHIP -->
     <section id="thought-leadership" class="section">
       <div class="container">
         <h2>Thought Leadership</h2>
@@ -105,7 +100,8 @@
         <article class="article-preview">
           <h3>The Strategic Power of Data</h3>
           <p>
-            How institutions transform information into strategic advantage.
+            A reflection on how institutions can transform raw information
+            into strategic advantage.
           </p>
           <a href="articles/strategic-power-of-data.html">Read More</a>
         </article>
@@ -113,7 +109,8 @@
         <article class="article-preview">
           <h3>Technology and Economic Transformation</h3>
           <p>
-            How innovation reshapes institutional competitiveness.
+            Examining how technological innovation reshapes national and
+            institutional competitiveness.
           </p>
           <a href="articles/technology-economic-transformation.html">Read More</a>
         </article>
@@ -122,21 +119,24 @@
     </section>
 
 
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
 
         <p>
-          For speaking engagements, advisory work, or collaboration inquiries:
+          For speaking engagements, advisory work, or collaboration
+          inquiries, please reach out.
         </p>
 
-        <p>Email: <a href="mailto:fortuneitiola@gmail.com">fortuneitiola@gmail.com</a></p>
+        <p>Email: your@email.com</p>
       </div>
     </section>
 
   </main>
 
 
+  <!-- ================= FOOTER ================= -->
   <footer class="site-footer">
     <div class="footer-container">
 
@@ -173,17 +173,18 @@
   </footer>
 
 
+  <!-- ================= JAVASCRIPT ================= -->
   <script>
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('.top-nav');
-    // Fixed: Selector was '.nav-links a', changed to '.top-nav a' to match your HTML
-    const links = document.querySelectorAll('.top-nav a');
+    const links = document.querySelectorAll('.nav-links a');
 
     hamburger.addEventListener('click', () => {
       nav.classList.toggle('active');
       hamburger.classList.toggle('is-active');
     });
 
+    /* Close mobile menu when link is clicked */
     links.forEach(link => {
       link.addEventListener('click', () => {
         nav.classList.remove('active');
