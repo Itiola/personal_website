@@ -27,3 +27,41 @@ section {
 .section-grey {
   background: var(--light-grey);
 }
+
+*****
+.section-intro {
+  max-width: 650px;
+  margin-bottom: 50px;
+  color: var(--mid-grey);
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.topic-card {
+  display: block;
+  padding: 32px;
+  border: 1px solid #e6e6e6;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+  background: white;
+}
+
+.topic-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.topic-card p {
+  font-size: 0.95rem;
+  color: var(--mid-grey);
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  border-color: black;
+}

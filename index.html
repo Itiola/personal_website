@@ -3,194 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Fortune Itiola is a public speaker, thought leader, and consultant."
+  >
+  <meta name="theme-color" content="#ffffff">
   <title>Fortune Itiola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="stylesheet" href="assets/css/main.css">
-  <style>
-    /* Added to ensure the single-page scroll is smooth */
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
 </head>
 <body>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-  <header class="site-topbar">
+  <header class="site-topbar" id="top">
+    <div class="scroll-progress" aria-hidden="true">
+      <span class="scroll-progress-bar"></span>
+    </div>
+
     <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Fortune Itiola home">
+        <span class="logo">
+          <img src="assets/images/logo.png" alt="Fortune Itiola logo">
+        </span>
+        <span class="brand-text">Fortune Itiola</span>
+      </a>
 
-      <div class="logo">
-        <a href="#about"> <img src="assets/images/logo.png" alt="Fortune Itiola Logo">
-        </a>
-      </div>
-
-      <button class="hamburger" aria-label="Open menu">
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <nav class="top-nav">
-          <a href="#about">About</a>
-          <a href="#speaking">Speaking</a>
-          <a href="#consultation">Consultation</a>
-          <a href="#thought-leadership">Thought Leadership</a>
-          <a href="#contact">Contact</a>
-          </nav>
-
+      <nav class="top-nav" id="primary-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#speaking">Speaking</a>
+        <a href="#advisory">Advisory</a>
+        <a href="#thought-leadership">Thought Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
+  <main class="page" id="content">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="intro-line">Thought Leader &middot; Builder &middot; Consultant</p>
+      <h1 id="page-title">Fortune Itiola</h1>
+    </section>
 
-  <main>
-
-    <section id="about" class="section-light">
-  <div class="container">
-<div class="container"> <h2 class="section-title" style="margin-bottom: 30px;">Public Speaker · Thought Leader · Consultant</h2>
-    
-    <div class="section-text">
-      <p>
-        I am Babatunde Fortune Itiola, fondly called BFI, a passionate thinker and speaker at the intersection of technology, economics, and data. A technology enabled and data driven thought leader who helps individuals, families, businesses, organizations, economies and nations understand, improve and transform their systems.
-      </p> 
-
-      <p>
-        As a consultant and emerging thought leader, I engage audiences around the practical application of data-driven insights, the transformative power of technology, and the economic principles that shape our world. I strive to make complex ideas accessible and actionable, bridging the gap between theory and practice.
-      </p>
-
-      <p>
-        I am currently building a consulting company dedicated to helping organizations harness the power of data, innovate strategically, and unlock new economic opportunities. My approach blends rigorous analysis with strategic thinking, enabling leaders to navigate uncertainty, anticipate trends, and make decisions that drive measurable impact.
-      </p>
-
-      <p>
-        Through public speaking, writing, and advisory work, I aim to inspire others to think critically, embrace innovation, and understand the broader forces shaping business and society. I believe that knowledge is most valuable when shared, and that insights are only as powerful as the action they inspire.
-      </p>
-      
-      <p>
-        When I’m not speaking or advising, I’m exploring emerging trends in technology and economics, seeking new ways to create meaningful impact, and engaging with communities that are shaping the future of business and innovation.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-    <section id="speaking" class="section-grey">
-      <div class="container">
-        <h2>Speaking</h2>
-
-        <p>
-          I speak on technology, data strategy, and economic transformation.
-        </p>
-
-        <p>
-          Formats include keynote addresses, executive briefings, and institutional forums.
-        </p>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="section-body">
+        <p>I am Babatunde Fortune Itiola (BFI), a thinker, teacher, speaker, consultant, and lifelong learner passionate about the development of people, organizations, economies and societies.</p>
+        <p>My work sits at the intersection of technology, economics, and data, where I explore how systems can be understood, improved, and transformed to create better outcomes for individuals, businesses, communities, and nations. I believe that many of the challenges we face are ultimately systems challenges, and that meaningful progress begins with understanding how people, incentives, institutions, and technology interact.</p>
+        <p>As a consultant and thought leader, I help leaders and organizations navigate complexity, make informed decisions, and adapt to a rapidly changing world. My approach combines analytical rigor, strategic thinking, and practical insight to turn complex ideas into clear and actionable solutions.</p>
+        <p>Beyond consulting, I am deeply passionate about people development. I enjoy helping people grow, think more clearly, solve meaningful problems, and realize their potential. Whether through public speaking, writing, mentoring, teaching, or advisory engagements, I am driven by the opportunity to share knowledge, challenge assumptions, and inspire positive action.</p>
+        <p>I am currently building a consulting company focused on helping organizations leverage technology, data, and strategic thinking to create sustainable value. While business building is an important part of my journey, I view it as a platform for a broader mission: empowering people and organizations to thrive in an increasingly interconnected and technology-driven world.</p>
+        <p>I believe that knowledge becomes valuable when it is shared, wisdom emerges when knowledge is applied, and lasting impact is created when people are empowered to grow. Through my work, I seek to contribute to that growth by helping others better understand the systems that shape their lives, organizations, economies, and futures.</p>
+        <p>When I am not consulting, speaking, or writing, I spend my time exploring emerging trends in technology, economics, leadership, and human development, always searching for ideas that can help people make better decisions and build a better future.</p>
       </div>
     </section>
 
-
-    <section id="consultation" class="section-light">
-      <div class="container">
-        <h2>Consultation</h2>
-
-        <p>
-          I am building a consulting practice helping organizations harness data,
-          innovate strategically, and navigate uncertainty.
-        </p>
+    <section id="speaking" class="section">
+      <h2>Speaking</h2>
+      <div class="section-body">
+        <p>I speak on a varied number of topics and conferences from Faith, Leadership, Personal Finance, Marriage, Business, Career, Technology, Data, Economics and Nation Building &amp; Policy.</p>
+        <p>Formats include keynote addresses, executive briefings, and institutional forums.</p>
       </div>
     </section>
 
+    <section id="advisory" class="section">
+      <h2>Advisory</h2>
+      <div class="section-body">
+        <p>I run a Personal Advisory Practice on the following topics: Career, Personal Finance, Business, Relationships, Personal Development, Parenting and Leadership.</p>
+      </div>
+    </section>
 
     <section id="thought-leadership" class="section">
-      <div class="container">
-        <h2>Thought Leadership</h2>
-
+      <h2>Thought Leadership</h2>
+      <div class="section-body article-list">
         <article class="article-preview">
           <h3>The Strategic Power of Data</h3>
-          <p>
-            How institutions transform information into strategic advantage.
-          </p>
-          <a href="articles/strategic-power-of-data.html">Read More</a>
+          <p>How institutions transform information into strategic advantage.</p>
         </article>
 
         <article class="article-preview">
           <h3>Technology and Economic Transformation</h3>
-          <p>
-            How innovation reshapes institutional competitiveness.
-          </p>
-          <a href="articles/technology-economic-transformation.html">Read More</a>
+          <p>How innovation reshapes institutional competitiveness.</p>
         </article>
-
       </div>
     </section>
 
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-
-        <p>
-          For speaking engagements, advisory work, or collaboration inquiries:
-        </p>
-
-        <p>Email: <a href="mailto:fortuneitiola@gmail.com">fortuneitiola@gmail.com</a></p>
+    <section id="contact" class="section section-contact">
+      <h2>Contact</h2>
+      <div class="section-body">
+        <p>For speaking engagements, advisory work, or collaboration inquiries:</p>
+        <p><a class="contact-link" href="mailto:fortuneitiola@gmail.com">fortuneitiola@gmail.com</a></p>
       </div>
     </section>
-
   </main>
 
-
   <footer class="site-footer">
-    <div class="footer-container">
-
-      <div class="footer-col">
-        <h3>Fortune Itiola</h3>
-        <p>Helping individuals, organizations and nations think clearly and act intentionally.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#speaking">Speaking</a></li>
-          <li><a href="#consultation">Consultation</a></li>
-          <li><a href="#thought-leadership">Thought Leadership</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <div class="social-links">
-          <a href="#">LinkedIn</a>
-          <a href="#">Twitter</a>
-          <a href="#">Newsletter</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2025 Fortune Itiola. All rights reserved.</p>
-    </div>
+    <p>&copy; <span id="year"></span> Fortune Itiola. All rights reserved.</p>
   </footer>
 
-
   <script>
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('.top-nav');
-    // Fixed: Selector was '.nav-links a', changed to '.top-nav a' to match your HTML
-    const links = document.querySelectorAll('.top-nav a');
+    const topbar = document.querySelector(".site-topbar");
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".top-nav");
+    const links = document.querySelectorAll(".top-nav a");
+    const sections = document.querySelectorAll("main section[id]");
+    const progressBar = document.querySelector(".scroll-progress-bar");
+    const year = document.getElementById("year");
 
-    hamburger.addEventListener('click', () => {
-      nav.classList.toggle('active');
-      hamburger.classList.toggle('is-active');
+    const closeMenu = () => {
+      hamburger.classList.remove("is-active");
+      hamburger.setAttribute("aria-expanded", "false");
+      nav.classList.remove("active");
+      document.body.classList.remove("menu-open");
+    };
+
+    hamburger.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("active");
+      hamburger.classList.toggle("is-active", isOpen);
+      hamburger.setAttribute("aria-expanded", String(isOpen));
+      document.body.classList.toggle("menu-open", isOpen);
     });
 
-    links.forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('active');
-        hamburger.classList.remove('is-active');
-      });
+    links.forEach((link) => {
+      link.addEventListener("click", closeMenu);
     });
+
+    document.addEventListener("click", (event) => {
+      if (!nav.classList.contains("active")) {
+        return;
+      }
+
+      const clickedInsideNav = nav.contains(event.target);
+      const clickedToggle = hamburger.contains(event.target);
+
+      if (!clickedInsideNav && !clickedToggle) {
+        closeMenu();
+      }
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          links.forEach((link) => {
+            const isMatch = link.getAttribute("href") === `#${entry.target.id}`;
+            link.classList.toggle("is-current", isMatch);
+            if (isMatch) {
+              link.setAttribute("aria-current", "true");
+            } else {
+              link.removeAttribute("aria-current");
+            }
+          });
+        });
+      },
+      {
+        rootMargin: "-35% 0px -55% 0px",
+        threshold: 0
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        topbar.classList.toggle("is-scrolled", window.scrollY > 12);
+
+        const scrollableHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const progress =
+          scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0;
+
+        progressBar.style.width = `${Math.min(progress, 100)}%`;
+      },
+      { passive: true }
+    );
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 820) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+
+    progressBar.style.width = "0%";
+    year.textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
